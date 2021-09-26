@@ -18,26 +18,26 @@
 nav{
     width: 100%;
     height: 70px;
-    background-color: #FF8A5B;
+    background-color: var(--third-color);
     text-align: center;
-    padding-top: 25px;
-}
-
-nav img{
-    width: 5%;
-    max-width: 100%;
-    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav li{
     display: inline;
-    color: #000;
     padding: 8px 0 8px 16px;
     text-decoration: none;
     font-family: var(--font);
     font-size: 150%;
     text-decoration: none;
     color: white;
+}
+
+iframe{
+    width: 100%;
+    height: 70px;
 }
 
 body{
@@ -132,7 +132,10 @@ main{
 }
 
 /*******************************************************************/
-.gallery-container{
+
+
+ul {
+    list-style-type: none;
     display: grid;
     grid-template-columns: repeat(4 ,1fr);
     padding: 100px;
@@ -140,51 +143,59 @@ main{
     position: relative;
 }
 
-.gallery__item{
+li {
+    position: relative;
+    overflow: hidden;
+    margin: 0 15px 15px 0;
     cursor: pointer;
     transition: all 300ms;
     overflow: hidden;
-
 }
 
-.gallery__img{
+li img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
 }
 
-.gallery__img:hover{
-    opacity: 0.75;
-}
-
-.gallery__item:hover{
-    transform: scale(1.05);
-}
-  
-.text {
-    color: black;
-    font-family: var(--font);
-    font-weight: bold;
+.info {
+    display: none;
     position: absolute;
-    overflow: hidden;
-    font-size: 30px;
+    z-index: 10;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    z-index: 10;
+    color: black;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    font-family: var(--font);
+    font-weight: bold;
+}
+
+li:hover{
+    opacity: 0.75;
+    transform: scale(1.05)
+}
+
+li:hover .info {
+    display: block;
+    opacity: 1;
 }
 
 @media screen and (max-width: 480px){
 
-    .gallery-container{
+    ul{
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
 
 @media screen and (max-width: 980px){
 
-    .gallery-container{
+    ul{
         grid-template-columns: repeat(3, 1fr);
     }
 
