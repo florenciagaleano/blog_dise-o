@@ -23,6 +23,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0.95;
 }
 
 nav li{
@@ -119,6 +120,7 @@ main{
     margin-right: 30px;
     box-shadow: 5px 5px 5px grey;
     margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .btn-articulo{
@@ -183,6 +185,47 @@ li:hover{
 li:hover .info {
     display: block;
     opacity: 1;
+}
+
+/*******************************************************************/
+
+#footer{
+    text-align: center;
+    background-color: var(--first-color);
+    opacity: 0.7;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 150px;
+}
+
+#footer i{
+    font-size: 60px;
+    padding: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+#footer p{
+    font-family: var(--font);
+    color: white;
+    font-size: 20px;
+}
+
+/*******************************************************************/
+#iframe-nav{
+    width: 100%;
+    height: 70px;
+    border: none;
+
+}
+
+#iframe-footer{
+    border: none;
+    width: 300px;
+    height: 100px;
+    display:block;
+    width: 100%;
+    height: 150px;
 }
 
 @media screen and (max-width: 480px){
