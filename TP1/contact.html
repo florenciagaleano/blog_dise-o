@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/validations.js"></script>
+    <link rel="shortcut icon" href="img/icono.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Flor & Deco</title>
+</head>
+
+<body>
+    <nav>
+        <iframe id="iframe-nav" name="iframe-nav" src="nav.html" scrolling = "no"></iframe>
+    </nav>
+    <header id="titulo">
+        <h1>Flor & Deco <span>Blog de decoración</span></h1>
+    </header>
+    <div class="container-form">
+        <h2>Contactanos 👇</h2>
+        <form id="form-contacto">
+            <div><label>Nombre</label><input name='name' type='text' class='nombre' value=''></div>
+            <div><label>Email</label><input name='email' type='text' class='email' value=''></div>
+            <div><label>Teléfono</label><input name='phone' type='text' class='phone' value=''></div>
+            <div><label>Comentarios</label><textarea name='mensaje' rows='6' class='mensaje'></textarea></div>
+            <div><input name='boton' type='submit' value='Enviar' class='boton' onclick="validar()"></div>
+        </form>
+    </div>
+    <footer>
+        <iframe id="iframe-footer" name="iframe-footer" src="footer.html" scrolling = "no"></iframe>
+    </footer>
+</body>
+
+</html>
