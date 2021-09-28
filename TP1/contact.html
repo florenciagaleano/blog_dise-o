@@ -13,7 +13,12 @@
 
 <body>
     <nav>
-        <iframe id="iframe-nav" name="iframe-nav" src="nav.html" scrolling = "no"></iframe>
+        <div>
+            <a target="_top" href="index.html" title="Inicio"><li>Inicio</li></a>
+            <a target="_top" href="gallery.html" title="Galería de Ideas"><li>Galería de Ideas</li></a>
+            <a target="_top" href="contact.html"><li>Contacto</li></a>
+            <a href="#footer"><li>Seguínos en redes</li></a>
+        </div>
     </nav>
     <header id="titulo">
         <h1>Flor & Deco <span>Blog de decoración</span></h1>
@@ -28,7 +33,7 @@
             <div><input name='boton' type='submit' value='Enviar' class='boton' onclick="validar()"></div>
         </form>
     </div>
-    <footer>
+    <footer id="footer">
         <iframe id="iframe-footer" name="iframe-footer" src="footer.html" scrolling = "no"></iframe>
     </footer>
 </body>

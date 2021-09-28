@@ -44,6 +44,7 @@ iframe{
 
 body{
     background-color: var(--background-color);
+    min-height: calc(100% -4rem);
 }
 
 a{
@@ -87,10 +88,11 @@ main{
     color: white;
 }
 
-#articulo-1 img{
+#articulo-1 img, #articulo-2 img{
     width: 430px;
     float: left;
     margin-right: 30px;
+    margin-bottom: 15px;
     box-shadow: 5px 5px 5px grey;
 }
 
@@ -115,14 +117,6 @@ main{
     margin-top: 50px;
 }
 
-#articulo-2 img{
-    width: 430px;
-    float: right;
-    margin-right: 30px;
-    box-shadow: 5px 5px 5px grey;
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
 
 .btn-articulo{
     background-color: var(--first-color);
@@ -247,7 +241,7 @@ li:hover .info {
 
 #vista img{
     margin: 10px;
-    border: 10px dashed white;
+    border: 20px white;
     width: 300px;
     height: 400px;
 }
@@ -255,7 +249,7 @@ li:hover .info {
 
 /*******************************************************************/
 
-#footer{
+#pie-de-pagina{
     text-align: center;
     background-color: var(--first-color);
     opacity: 0.7;
@@ -264,14 +258,14 @@ li:hover .info {
     height: 150px;
 }
 
-#footer i{
+#pie-de-pagina i{
     font-size: 60px;
     padding: 30px;
     color: white;
     cursor: pointer;
 }
 
-#footer p{
+#pie-de-pagina p{
     font-family: var(--font);
     color: white;
     font-size: 20px;
@@ -353,20 +347,53 @@ li:hover .info {
     color:white;
 }
 
+footer{
+    height: 4rem;
+    width: 100%;
+}
+
 /*******************************************************************/
 
 @media screen and (max-width: 480px){
 
-    #galeria ul{
+    ul{
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .articulo{
+        margin: 30px 25px 10px 25px;
+    }
+
+    #vista img{
+        width: 200px;
+        height: 300px;
+    }
+
+    #titulo{
+        font-size: 50px;
+    }
+
+    #articulo-2 h3{
+        margin-top: 30px;
+    }
 }
 
-@media screen and (max-width: 980px){
+@media screen and (max-width: 1600px){
 
-    #galeria ul{
+    ul{
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .articulo{
+        margin: 30px 25px 10px 25px;
+    }
+
+    #vista img{
+        width: 200px;
+        height: 300px;
+    }
+
+    #titulo{
+        font-size: 70px;
+    }
 }
