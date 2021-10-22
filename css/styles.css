@@ -289,6 +289,18 @@ li:hover .info {
 }
 
 /*******************************************************************/
+.container-form h4{
+    font-family: 'Ephesis', cursive;
+    font-size: 40px;
+    color: var(--first-color);
+    margin-left: 25px;
+}
+
+.container-form{
+    background-image: url(../img/newsletter.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .container-form h2{
     font-family: var(--font);
@@ -300,12 +312,13 @@ li:hover .info {
 }
 
 #form-contacto input{
-    padding: 10px;
-    font-size: 30px;
-    border-width: 2px;
-    border-radius: 9px;
-    display:block;
-    width: 400px;
+    font-size: 24px;
+    font-family: var(--font);
+    border-width: 0px;
+    color: #000000;
+    border-style: solid;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px rgba(66,66,66,.75);
 }
 
 #form-contacto div{
@@ -364,6 +377,10 @@ footer{
         margin: 30px 25px 10px 25px;
     }
 
+    .articulo img{
+        width: 200px; height: 230px;
+    }
+
     #vista img{
         width: 200px;
         height: 300px;
@@ -376,9 +393,13 @@ footer{
     #articulo-2 h3{
         margin-top: 30px;
     }
+
+    .container-form{
+        background-image: url(../img/newsletter-tablet-celular.jpg);
+    }
 }
 
-@media screen and (max-width: 1600px){
+@media screen and (max-width: 768px){
 
     ul{
         grid-template-columns: repeat(3, 1fr);
@@ -388,6 +409,10 @@ footer{
         margin: 30px 25px 10px 25px;
     }
 
+    .articulo img{
+        width: 200px; height: 230px;
+    }
+
     #vista img{
         width: 200px;
         height: 300px;
@@ -395,5 +420,9 @@ footer{
 
     #titulo{
         font-size: 70px;
+    }
+
+    .container-form{
+        background-image: url(../img/newsletter-tablet-celular.jpg);
     }
 }
