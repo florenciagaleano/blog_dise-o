@@ -311,19 +311,24 @@ li:hover .info {
     margin-bottom: 30px;
 }
 
+#form-contacto{
+    background-color: rgb(255, 255, 255,0.35);
+    margin: 0 80px 0 80px;
+    padding-bottom: 60px;
+}
+
 #form-contacto input{
     font-size: 24px;
-    font-family: var(--font);
-    border-width: 0px;
-    color: #000000;
-    border-style: solid;
-    border-radius: 6px;
-    box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+    border-width: 2px;
+    border-radius: 7px;
+    width: 500px;
+    height: 50px;
 }
 
 #form-contacto div{
     font-family: var(--font);
     color: var(--first-color);
+    font-weight: bold;
     font-size: 30px;
     margin-top: 50px;
     text-align: center;
@@ -348,16 +353,26 @@ li:hover .info {
     height: 200px;
 }
 
-.boton{
+.btn{
     cursor: pointer;
     font-family: var(--font);
-    margin-bottom: 20px;
+    font-size: 25px;
     background-color: var(--third-color);
-    opacity: 0.8;
+    padding:11px 76px;
+    opacity: 0.75;
+    margin: 30px 30px 30px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    border-radius: 9px;
+    width: 575px;
+    color: white;
 }
 
-.boton:hover{
-    color:white;
+
+.btn:hover{
+    text-decoration: underline;
+    opacity: 0.9;
 }
 
 footer{
