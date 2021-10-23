@@ -176,24 +176,25 @@ li img{
     position: absolute;
     z-index: 10;
     color: black;
-    text-shadow: 1px 1px 2px var(--second-color);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     font-weight: bold;
-    font-family: 'Karla', sans-serif;
-    font-size: 15px;
+    font-family: var(--font);
+    font-size: 25px;
 }
 
 li:hover{
-    opacity: 0.75;
     transform: scale(1.05)
 }
 
 li:hover .info {
     display: block;
-    opacity: 1;
+}
+
+li:hover img{
+    opacity: 0.4;
 }
 
 /*******************************************************************/
@@ -416,6 +417,10 @@ footer{
     .container-form{
         background-image: url(../img/newsletter-tablet-celular.jpg);
     }
+
+    .info{
+        font-size: 5px;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -443,5 +448,9 @@ footer{
 
     .container-form{
         background-image: url(../img/newsletter-tablet-celular.jpg);
+    }
+
+    .info{
+        font-size: 15px;
     }
 }
