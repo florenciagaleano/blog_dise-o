@@ -182,7 +182,7 @@ li img{
     -ms-transform: translate(-50%, -50%);
     font-weight: bold;
     font-family: var(--font);
-    font-size: 25px;
+    font-size: 1em;
 }
 
 li:hover{
@@ -419,8 +419,9 @@ footer{
     }
 
     .info{
-        font-size: 5px;
+        font-size:  5px;
     }
+
 }
 
 @media screen and (max-width: 768px){
@@ -453,4 +454,5 @@ footer{
     .info{
         font-size: 15px;
     }
+
 }
