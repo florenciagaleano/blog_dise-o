@@ -1,4 +1,4 @@
-# blog_diseno
+# TPO Front Integrador
 Trabajo Práctico Codo a codo Fullstack Python
 💫Blog de Diseño de Interiores💫
 https://flor-diseno.netlify.app/
