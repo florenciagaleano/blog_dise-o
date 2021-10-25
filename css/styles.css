@@ -387,7 +387,7 @@ footer{
 
 /*******************************************************************/
 
-@media screen and (max-width: 480px) and ( orientation: landscape ){
+@media screen and (max-width: 480px){
 
     ul{
         grid-template-columns: repeat(2, 1fr);
@@ -420,6 +420,10 @@ footer{
 
     .info{
         font-size:  5px;
+    }
+
+    nav{
+        font-size: 5px;
     }
 
 }
@@ -455,4 +459,7 @@ footer{
         font-size: 15px;
     }
 
+    nav{
+        font-size: 10px;
+    }
 }
