@@ -443,6 +443,11 @@ footer{
         height: 75%;
     }
 
+    footer{
+        display: block;
+		width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 768px){
@@ -490,6 +495,11 @@ footer{
         border: 20px white;
         width: 75%;
         height: 75%;
+    }
+
+    footer{
+        display: block;
+		width: 100%;
     }
 
 }
