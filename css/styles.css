@@ -426,6 +426,23 @@ footer{
         font-size: 5px;
     }
 
+    #iframe-footer{
+        width: auto;
+        height: auto;
+    }
+
+    #vista{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    #vista img{
+        margin: 10px;
+        border: 20px white;
+        width: 75%;
+        height: 75%;
+    }
+
 }
 
 @media screen and (max-width: 768px){
@@ -462,4 +479,17 @@ footer{
     nav{
         font-size: 10px;
     }
+
+    #vista{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    #vista img{
+        margin: 10px;
+        border: 20px white;
+        width: 75%;
+        height: 75%;
+    }
+
 }
