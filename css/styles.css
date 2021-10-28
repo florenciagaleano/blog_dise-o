@@ -444,7 +444,7 @@ footer{
     }
 
     footer{
-        display: block;
+        display: inline-block;
 		width: 100%;
     }
 
@@ -498,7 +498,7 @@ footer{
     }
 
     footer{
-        display: block;
+        display: inline-block;
 		width: 100%;
     }
 
