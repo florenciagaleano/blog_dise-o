@@ -383,7 +383,9 @@ li:hover img{
 footer{
     height: 4rem;
     width: 100%;
+    display: flex;
 }
+
 
 /*******************************************************************/
 
@@ -442,12 +444,6 @@ footer{
         width: 75%;
         height: 75%;
     }
-
-    footer{
-        display: inline-block;
-		width: 100%;
-    }
-
 }
 
 @media screen and (max-width: 768px){
@@ -495,11 +491,6 @@ footer{
         border: 20px white;
         width: 75%;
         height: 75%;
-    }
-
-    footer{
-        display: inline-block;
-		width: 100%;
     }
 
 }
